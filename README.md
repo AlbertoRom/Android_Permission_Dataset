@@ -24,9 +24,9 @@ Durant aquesta pràctica hem realitzat diferents experiments que comportaba al a
     
     3) Diagrama de caixes:
     
-        3.1) Nº de permisos perillosos: Sabes quins són els quartils de permisos perillosos i els seus outliers tant en les aplicacions benignes com malicioses.
+        3.1) Nº de permisos perillosos: Saber quins són els quartils de permisos perillosos i els seus outliers tant en les aplicacions benignes com malicioses.
         
-        3.2) Nº de permisos segurs: Sabes quins són els quartils de permisos segurs i els seus outliers tant en les aplicacions benignes com malicioses.
+        3.2) Nº de permisos segurs: Saber quins són els quartils de permisos segurs i els seus outliers tant en les aplicacions benignes com malicioses.
         
         3.3) Ratings: Comprobar el quartils dels ratings dels usuaris i els seus outliers tant en les aplicacions benignes com malicioses.
         
@@ -71,7 +71,7 @@ Els models que s'han utilitzat i comporbat han sigut:
  
  A continuació, es pot veure els resultats que s'han obtenit per cada model:
 
-| Model | precision | recall | f1-score | True Beniges | Treu Maliciós | False Beniges | False Maliciós |
+| Model | precision | recall | f1-score | True Beniges | True Maliciós | False Beniges | False Maliciós |
 | ----- | --------- | ------ | -------- | ------------ | ------------- | ------------- | -------------- |
 | Gradient Boosting Classifier | 0.76 | 0.77 | 0.76 | 1453 | 3110 | 766 | 519 |
 | Ridge Classifier | 0.60 | 0.57 | 0.56 | 521 | 3367 | 509 | 1451 |
