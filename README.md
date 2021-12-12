@@ -17,18 +17,18 @@ per un altre banda, és segur instal·lar-ho i utilitzar en el nostre dispositiu
 
 ## Experiments
 Durant aquesta pràctica hem realitzat diferents experiments que comportaba al analisis dels atributs del dataset:
-    - Percentatge d'apliacions benignes i maliciosos: Calculem i comparem la quantitat d'aplicacions que tenen un comportament maligne al nostre dispositiu i quins no.
-    - Correlació dels atributs: És calcula la correlació de algunes variables destacades per tal de saber quina realció tene amb la variable objectiva "Class".
-    - Diagrama de caixes:
-        - Nº de permisos perillosos: Sabes quins són els quartils de permisos perillosos i els seus outliers tant en les aplicacions benignes com malicioses.
-        - Nº de permisos segurs: Sabes quins són els quartils de permisos segurs i els seus outliers tant en les aplicacions benignes com malicioses.
-        - Ratings: Comprobar el quartils dels ratings dels usuaris i els seus outliers tant en les aplicacions benignes com malicioses.
-    - Diagrama de barres:
-        - Aplicacions benignes per cada catgeoria: Mostra del numero de aplicacions segures per cada categoria.
-        - Aplicacions malicioses per cada catgeoria: Mostra del numero de aplicacions no segures per cada categoria.
-        - Comparció de preus: Mostra del preu en funció de si l'app és benigne o maliciós.
-    - Nº d'apps benignes per paquet
-    - Nº d'apps malicioses per paquet
+    1) Percentatge d'apliacions benignes i maliciosos: Calculem i comparem la quantitat d'aplicacions que tenen un comportament maligne al nostre dispositiu i quins no.
+    2) Correlació dels atributs: És calcula la correlació de algunes variables destacades per tal de saber quina realció tene amb la variable objectiva "Class".
+    3) Diagrama de caixes:
+        3.1) Nº de permisos perillosos: Sabes quins són els quartils de permisos perillosos i els seus outliers tant en les aplicacions benignes com malicioses.
+        3.2) Nº de permisos segurs: Sabes quins són els quartils de permisos segurs i els seus outliers tant en les aplicacions benignes com malicioses.
+        3.3) Ratings: Comprobar el quartils dels ratings dels usuaris i els seus outliers tant en les aplicacions benignes com malicioses.
+    4) Diagrama de barres:
+        4.1) Aplicacions benignes per cada catgeoria: Mostra del numero de aplicacions segures per cada categoria.
+        4.2) Aplicacions malicioses per cada catgeoria: Mostra del numero de aplicacions no segures per cada categoria.
+        4.3) Comparció de preus: Mostra del preu en funció de si l'app és benigne o maliciós.
+    5) Nº d'apps benignes per paquet
+    6) Nº d'apps malicioses per paquet
 
 ### Preprocessat
 Pel que fa al preporcessat s'han realitzat dues accions:
@@ -40,11 +40,11 @@ Pel que fa al preporcessat s'han realitzat dues accions:
     
 ### Model
 Els models que s'han utilitzat i comporbat han sigut: 
-    - Gradient Boosting Classifier
-    - Ridge Classifier
-    - Gaussian Naive Bayes
-    - Random Forest Classifier
-    - Regressió Logística
+    1) Gradient Boosting Classifier
+    2) Ridge Classifier
+    3) Gaussian Naive Bayes
+    4) Random Forest Classifier
+    5) Regressió Logística
  
  Per tal de veure els resultats s'han genera per cada model predictiu un "Classification Report", que conté els resultats del "Precision", "Recall" i el "f1-score",
  i una matriu de confusió que indica els falsos benignes i maliciosos, a més del benignes i maliciosos positius.
