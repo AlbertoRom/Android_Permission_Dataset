@@ -6,3 +6,4 @@ seaborn
 ploty
 sklearn
 collections
+joblib
