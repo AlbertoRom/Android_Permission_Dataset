@@ -54,7 +54,8 @@ Pel que fa al preporcessat s'han realitzat dues accions:
        al 20% restant.
     
 ### Model
-Els models que s'han utilitzat i comporbat han sigut: 
+Els models que s'han utilitzat i comporbat han sigut:
+
     1) Gradient Boosting Classifier
     
     2) Ridge Classifier
@@ -71,15 +72,10 @@ Els models que s'han utilitzat i comporbat han sigut:
  A continuació, es pot veure els resultats que s'han obtenit per cada model:
 
 | Model | precision | recall | f1-score | True Beniges | Treu Maliciós | False Beniges | False Maliciós |
-
 | Gradient Boosting Classifier | 0.76 | 0.77 | 0.76 | 1453 | 3110 | 766 | 519 |
-
 | Ridge Classifier | 0.60 | 0.57 | 0.56 | 521 | 3367 | 509 | 1451 |
-
 | Gaussian Naive Bayes | 0.72 | 0.70 | 0.60 | 1931 | 1600 | 2276 | 41 |
-
 | Random Forest Classifier | 0.72 | 0.72 | 0.72 | 1228 | 3147 | 729 | 744 |
-
 | Regressió Logística | 0.66 | 0.65 | 0.66 | 1017 | 3070 | 806 | 955 |
 
 ## Demo
