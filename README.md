@@ -17,33 +17,52 @@ per un altre banda, és segur instal·lar-ho i utilitzar en el nostre dispositiu
 
 ## Experiments
 Durant aquesta pràctica hem realitzat diferents experiments que comportaba al analisis dels atributs del dataset:
+
     1) Percentatge d'apliacions benignes i maliciosos: Calculem i comparem la quantitat d'aplicacions que tenen un comportament maligne al nostre dispositiu i quins no.
+    
     2) Correlació dels atributs: És calcula la correlació de algunes variables destacades per tal de saber quina realció tene amb la variable objectiva "Class".
+    
     3) Diagrama de caixes:
+    
         3.1) Nº de permisos perillosos: Sabes quins són els quartils de permisos perillosos i els seus outliers tant en les aplicacions benignes com malicioses.
+        
         3.2) Nº de permisos segurs: Sabes quins són els quartils de permisos segurs i els seus outliers tant en les aplicacions benignes com malicioses.
+        
         3.3) Ratings: Comprobar el quartils dels ratings dels usuaris i els seus outliers tant en les aplicacions benignes com malicioses.
+        
     4) Diagrama de barres:
+    
         4.1) Aplicacions benignes per cada catgeoria: Mostra del numero de aplicacions segures per cada categoria.
+        
         4.2) Aplicacions malicioses per cada catgeoria: Mostra del numero de aplicacions no segures per cada categoria.
+        
         4.3) Comparció de preus: Mostra del preu en funció de si l'app és benigne o maliciós.
+        
     5) Nº d'apps benignes per paquet
+    
     6) Nº d'apps malicioses per paquet
 
 ### Preprocessat
 Pel que fa al preporcessat s'han realitzat dues accions:
+
     1) Transformar els atributs categòrics "Category" i "Package" en valors enters per tal de poder fer els experiments d'anàlisi i en cas de que sigui necessari,
        utilitzar-les com variables per predir la classe d'una aplicació.
+       
     2) Eliminar aquelles mostres que continguin variables buides.
+    
     3) S'ha fet un Coss-Validation en el que es particiona les dades en dues parts, un d'entrenament, que correspon a un 80% d'aquestes, i un de prova, que correspon
        al 20% restant.
     
 ### Model
 Els models que s'han utilitzat i comporbat han sigut: 
     1) Gradient Boosting Classifier
+    
     2) Ridge Classifier
+    
     3) Gaussian Naive Bayes
+    
     4) Random Forest Classifier
+    
     5) Regressió Logística
  
  Per tal de veure els resultats s'han genera per cada model predictiu un "Classification Report", que conté els resultats del "Precision", "Recall" i el "f1-score",
@@ -52,10 +71,15 @@ Els models que s'han utilitzat i comporbat han sigut:
  A continuació, es pot veure els resultats que s'han obtenit per cada model:
 
 | Model | precision | recall | f1-score | True Beniges | Treu Maliciós | False Beniges | False Maliciós |
+
 | Gradient Boosting Classifier | 0.76 | 0.77 | 0.76 | 1453 | 3110 | 766 | 519 |
+
 | Ridge Classifier | 0.60 | 0.57 | 0.56 | 521 | 3367 | 509 | 1451 |
+
 | Gaussian Naive Bayes | 0.72 | 0.70 | 0.60 | 1931 | 1600 | 2276 | 41 |
+
 | Random Forest Classifier | 0.72 | 0.72 | 0.72 | 1228 | 3147 | 729 | 744 |
+
 | Regressió Logística | 0.66 | 0.65 | 0.66 | 1017 | 3070 | 806 | 955 |
 
 ## Demo
